@@ -168,6 +168,12 @@ async function main() {
             }
         });
     }
+    document.querySelector(".hamBurger").addEventListener("click", () => {
+        document.querySelector(".left").style.left = "0";
+    });
+    document.querySelector(".close").addEventListener("click", () => {
+        document.querySelector(".left").style.left = "-100%";
+    });
 
     document.querySelector(".volume > img").addEventListener("click", e => {
         if (e.target.src.includes("volume.svg")) {
