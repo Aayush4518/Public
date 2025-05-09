@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone </title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="home bg-grey rounded">
+                <img src="img/logo.svg" alt="" class="logo invert" style=" width: 125px;">
+                <img src="img/close.svg" alt="" class="close invert">
+                <ul>
+                    <li><img src="img/home.svg" alt="home" class="invert">Home</li>
+                    <li><img src="img/search.svg" alt="search" class="invert">Search</li>
+                </ul>
+            </div>
+
+
+            <div class="library bg-grey rounded">
+                <div class="flex" style="align-items: center;">
+                    <span style="margin-right: 8px;">
+                        <img src="img/playlist.svg" alt="">
+                    </span>
+
+                    <div class="flex" style="justify-content: space-between; flex: 1; align-items: center;">
+                        <div>Your Library</div>
+                        <img class="invert" src="img/add.svg" alt="add">
+                    </div>
+                </div>
+                <div class="songList wordWrap">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a target="_blank" href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a target="_blank" href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a>
+                    </div>
+                    <div><a target="_blank" href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy
+                                Policy</span></a>
+                    </div>
+                    <div><a target="_blank"
+                            href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a target="_blank" href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About
+                                Ads</span></a></div>
+                    <div><a target="_blank"
+                            href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="nav">
+                <div class="buttons flex rounded">
+                    <img src="img/hamBurger.svg" alt="" class="invert hamBurger">
+                    <div class="arrow">
+                        <img style="filter: invert();" src="img/left.svg" alt="left">
+                        <img style="filter: invert();" src="img/right.svg" alt="right">
+                    </div>
+                    <div class="signupButton">
+                        <button>Sign up</button>
+                        <button>Log in</button>
+                    </div>
+                </div>
+            </div>
+            <div class="content rounded">
+                <h2>Spotify Playlist</h2>
+                <div class="card hyperLink flex">
+                    <div data-folder= "album1" class="img1 cardBg relative cardContent">
+                        <div class="play">
+                            <img style="width: 40px; height: 40px;" src="img/playButton.svg" alt="play" class="playPause">
+                        </div>
+                        <img src="" alt="img1"
+                            class="rounded">
+                        <h3></h2>
+                    </div>
+                    <div data-folder= "album2" class="img2 cardBg relative cardContent">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02bf8097231e23698fa7670cb0" alt="img1"
+                            class="rounded">
+                        <div class="play">
+                            <img style="width: 40px; height: 40px;" src="img/playButton.svg" alt="play" class="playPause">
+                        </div>
+                        <h3></h2>
+                    </div>
+                    <div class="img3 cardBg relative cardContent">
+                        <img src="" alt="img1"
+                            class="rounded">
+                        <div class="play">
+                            <img style="width: 40px; height: 40px;" src="img/playButton.svg" alt="play" class="playPause">
+                        </div>
+                        <h3></h2>
+                    </div>
+                </div>
+
+                <div class="playBar ">
+                    <div class="aboveBar">
+
+                        <div class="songInfoContainer">
+                            <div class="songInfo"></div>
+                        </div>
+                        <!-- <marquee behavior="scroll" direction="left" class="songIngo"></marquee> -->
+                        <div class="songButtons flex">
+                            <img id="previous" src="img/previous.svg" alt="">
+                            <img id="play" src="img/play.svg" alt="">
+                            <img id="next" src="img/next.svg" alt="">
+                        </div>
+                        <div class="songTime"></div>
+                        <div class="volume">
+                            <img src="img/volume.svg" alt="volume icon">
+                            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+                        </div>
+
+                    </div>
+                    <div class="seekBar">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
